@@ -1,0 +1,29 @@
+{
+  "name": "detroit-zoo",
+  "version": "1.0.0",
+  "description": "Conccept design for Detroit Zoo Website",
+  "main": "gulp.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-ruby-sass": "^3.0.0",
+    "npm": "^6.0.1"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltchurch88t/Detroit-Zoo.git"
+  },
+  "author": "LaForrest Church",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltchurch88t/Detroit-Zoo/issues"
+  },
+  "homepage": "https://github.com/ltchurch88t/Detroit-Zoo#readme"
+}
