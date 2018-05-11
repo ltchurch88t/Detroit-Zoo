@@ -14,15 +14,21 @@ gulp.task('sass', () =>
 		.pipe(connect.reload()) //adding reload functionality to sass files
 );
 
+gulp.task('html', function() {
+    return gulp.src('*.html')
+        .pipe(gulp.dest(''))
+        .pipe(connect.reload())
+});
+
 // Watch
 gulp.task('watch', function() {
 
   // Watch .sass files
   gulp.watch('styles/**/*.sass', ['sass'])
 
-  gulp.watch('*.html', connect.reload) //using connect server instead of livereload
+  gulp.watch('*.html', ['html'])
 
-  // Create LiveReload server
+  // Create connect server
   connect.server({
   	livereload: true, //setting default to true
   	port: 8080 //localhost:8080

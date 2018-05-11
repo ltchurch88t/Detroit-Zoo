@@ -1,10 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+img {
+  height: auto;
+  max-width: 100%; }
+
+@media (min-width: 990px) {
+  ul.navbar-nav li.dropdown:hover div.dropdown-menu {
+    display: block; } }
+@media (max-width: 990px) {
+  .navbar {
+    background: #A8DCD1; } }
 #banner-container {
-  position: relative;
-  width: 100vw; }
+  height: 100vh; }
+  #banner-container video#full-vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(assets/himesh-kumar-behera-221104-unsplash.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.3; }
+
+#title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 500px; }
 
 #banner-title {
   background: transparent;
-  margin: auto;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-weight: bold;
   text-align: center;
-  position: fixed;
-  z-index: 1000; }
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 50%; }
+
+#visit-button {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  margin: auto;
+  border: 2px solid #A8DCD1; }
+  #visit-button a {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none; }
+
+#visit-button:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #A8DCD1; }
+  #visit-button:hover a {
+    color: #2F4F4F; }
+
+#details-section {
+  background: whitesmoke;
+  text-align: center; }
+  #details-section .detail-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2%; }
+    #details-section .detail-col #ticket-btn {
+      border-radius: 20px;
+      max-width: 150px;
+      margin: auto;
+      border: 3px solid #A8DCD1; }
+      #details-section .detail-col #ticket-btn a {
+        text-decoration: none;
+        color: black; }
+    #details-section .detail-col #ticket-btn:hover {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      background: #A8DCD1; }
+      #details-section .detail-col #ticket-btn:hover a {
+        color: #2F4F4F; }
+
+#welcome-image {
+  position: relative; }
+
+#welcome-title {
+  text-align: center; }
+
+#welcome-section {
+  background: url("assets/himesh-kumar-behera-221104-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#welcome-container {
+  height: 500px;
+  background: rgba(5, 5, 5, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+
+#animal-section {
+  background: #F17F29;
+  padding: 5%; }
+
+.card-img-top {
+  margin-left: 55%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  -webkit-box-shadow: 0 0 25px 3px rgba(1, 1, 1, 0.3);
+  box-shadow: 0 0 25px 3px rgba(1, 1, 1, 0.3); }
+
+.card-body {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.card-title {
+  width: 50%;
+  text-align: center; }
+
+.animal-info {
+  width: 50%;
+  margin-top: 5%; }
