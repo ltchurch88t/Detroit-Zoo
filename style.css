@@ -1,0 +1,10 @@
+#banner-container {
+  position: relative;
+  width: 100vw; }
+
+#banner-title {
+  background: transparent;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 1000; }
