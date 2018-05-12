@@ -1,19 +1,13 @@
-  //scrolling fade effect for images
-
+$(function () {
   $(document).scroll(function () {
-var y = $(this).scrollTop();
-if (y > 150) {
-    $('#img2').fadeIn();
-}
-else {$('#img2').fadeOut('fast')};
-
-if (y > 300) {
-    $('#img3').fadeIn();
-}
-else {$('#img3').fadeOut('fast')};
-
-if (y > 450) {
-    $('#img4').fadeIn();
-}
-else {$('#img4').fadeOut('fast')};
+    var $nav = $(".fixed-top");
+    var $socialNav = $(".social-nav-fixed");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	$socialNav.toggleClass('scrolling', $(this).scrollTop() > $nav.height());
+  });
 });
+
+
+$(function () {
+  $('[data-toggle="popover"]').popover({ html : true })
+})

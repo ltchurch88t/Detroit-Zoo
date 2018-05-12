@@ -4,6 +4,20 @@
 			div.dropdown-menu
 				display: block
 
-@media (max-width: 990px)
-	.navbar
-		background: $minty
+
+
+.fixed-top.scrolled
+	background-color: $darkslate !important
+	transition: background-color 200ms linear
+
+.social-nav-fixed
+	visibility: hidden
+	width: 100%
+
+.social-nav-fixed.scrolling
+	z-index: 1000
+	position: fixed
+	top: 70px
+	left: 0
+	visibility: visible
+	transition: visibility 200ms linear
