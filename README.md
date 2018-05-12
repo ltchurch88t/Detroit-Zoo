@@ -14,6 +14,6 @@ Design Requirements
 	c. Animal Exhibits
 	d. Hours/Contact
 4) Fast load time (under 3 seconds)
-5) Responsive design (Bootstrap or Foundations depending on design style)
+5) Responsive design (Bootstrap)
 
 Assets: https://unsplash.com/search/photos/zoo

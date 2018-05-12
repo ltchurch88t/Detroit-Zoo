@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+img {
+  height: auto;
+  max-width: 100%; }
+
+@media (min-width: 990px) {
+  ul.navbar-nav li.dropdown:hover div.dropdown-menu {
+    display: block; } }
+.fixed-top.scrolled {
+  background-color: #2F4F4F !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear; }
+
+.social-nav-fixed {
+  visibility: hidden;
+  width: 100%; }
+
+.social-nav-fixed.scrolling {
+  z-index: 1000;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  visibility: visible;
+  -webkit-transition: visibility 200ms linear;
+  transition: visibility 200ms linear; }
+
+#banner-container {
+  height: 100vh; }
+  #banner-container video#full-vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(assets/himesh-kumar-behera-221104-unsplash.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.3; }
+
+#title-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+#banner-title {
+  background: transparent;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center; }
+
+.visit-us {
+  height: 20px;
+  width: 290px;
+  text-align: center; }
+  .visit-us a {
+    color: whitesmoke; }
+
+.arrow {
+  color: white;
+  margin-top: 4%; }
+
+#visit-us-a {
+  height: 55px;
+  border: 3px solid transparent; }
+  #visit-us-a a {
+    text-decoration: none; }
+
+#visit-us-a:hover {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border-color: white; }
+  #visit-us-a:hover a {
+    color: white; }
+
+#left-arrow {
+  -webkit-animation: 2s pulse-left infinite;
+  animation: 2s pulse-left infinite; }
+
+#right-arrow {
+  -webkit-animation: 2s pulse-right infinite;
+  animation: 2s pulse-right infinite; }
+
+@-webkit-keyframes pulse-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes pulse-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@-webkit-keyframes pulse-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes pulse-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+#content-area {
+  z-index: 10; }
+
+#details-section {
+  background: whitesmoke;
+  text-align: center; }
+  #details-section .detail-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding: 2%; }
+    #details-section .detail-col ul {
+      text-align: left; }
+    #details-section .detail-col .ticket-btn {
+      border-radius: 20px;
+      max-width: 150px;
+      margin: auto;
+      border: 3px solid #A60067; }
+      #details-section .detail-col .ticket-btn a {
+        text-decoration: none;
+        color: black; }
+    #details-section .detail-col .ticket-btn:hover {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      background: #A60067; }
+      #details-section .detail-col .ticket-btn:hover a {
+        color: whitesmoke; }
+    #details-section .detail-col .detail-titles {
+      font-weight: bold;
+      color: whitesmoke;
+      line-height: 143px; }
+    #details-section .detail-col .circle-container {
+      border: 2px solid linear-gradient(top left, #ffbe0b, #ff9797);
+      background: -webkit-gradient(linear, left top, right bottom, from(#ffbe0b), to(#ff9797));
+      background: linear-gradient(top left, #ffbe0b, #ff9797);
+      height: 150px;
+      width: 150px;
+      border-radius: 150px;
+      margin-left: auto;
+      margin-right: auto; }
+
+#welcome-image {
+  position: relative; }
+
+#welcome-title {
+  text-align: center; }
+
+#detroit-zoo {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#6153cc), to(#a297ff));
+  background: linear-gradient(left, #6153cc, #a297ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.title-banner {
+  text-align: center;
+  background: #A60067;
+  opacity: 0.9; }
+
+#welcome-section {
+  background: url("assets/himesh-kumar-behera-221104-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#welcome-container {
+  height: 500px;
+  background: rgba(5, 5, 5, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+
+#map-section {
+  position: relative; }
+
+#map-section-title {
+  position: absolute;
+  color: whitesmoke;
+  font-weight: bold;
+  z-index: 100;
+  top: 1%;
+  right: 8%; }
+
+#map-title-container {
+  height: 100px; }
+
+#map-section-title-platform {
+  background: -webkit-gradient(linear, left top, right top, from(#6153cc), to(#a297ff));
+  background: linear-gradient(left, #6153cc, #a297ff);
+  height: 50px;
+  width: 500px;
+  position: absolute;
+  right: 0; }
+
+@media (max-width: 500px) {
+  #map-section-title {
+    right: 2%; }
+
+  #map-container {
+    margin-top: 15%; } }
+#map-container {
+  position: relative; }
+
+#zoo-map {
+  margin: auto;
+  width: 100%; }
+
+.btn.map-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  text-align: center;
+  border: 3px solid;
+  -webkit-animation: 2s pulsate infinite;
+  animation: 2s pulsate infinite;
+  position: absolute;
+  -webkit-box-shadow: 0 0 15px 3px rgba(1, 1, 1, 0.3);
+  box-shadow: 0 0 15px 3px rgba(1, 1, 1, 0.3); }
+
+.btn.map-icon:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: transparent; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+#icon-one {
+  background: crimson;
+  border-color: crimson;
+  top: 53%;
+  left: 8%;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+#icon-two {
+  background: #FFBE0B;
+  border-color: #FFBE0B;
+  top: 55%;
+  left: 24%;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+#icon-three {
+  background: #F17F29;
+  border-color: #F17F29;
+  top: 29%;
+  left: 15%;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+#icon-four {
+  background: #65DEF1;
+  border-color: #65DEF1;
+  top: 42%;
+  left: 19%;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+#icon-five {
+  background: #2F4F4F;
+  border-color: #2F4F4F;
+  top: 33%;
+  left: 29%; }
+
+#icon-six {
+  background: #A60067;
+  border-color: #A60067;
+  top: 30%;
+  left: 38%;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+#icon-seven {
+  background: green;
+  border-color: green;
+  top: 50%;
+  left: 60%; }
+
+#info-section {
+  height: 50px; }
+
+#events-section {
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#6153cc), to(#a297ff));
+  background: linear-gradient(left, #6153cc, #a297ff); }
+
+.col-sm .card {
+  border-radius: 10px; }
+  .col-sm .card .card-title {
+    color: #A60067; }
+  .col-sm .card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+
+.card-event-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 10%;
+  border-bottom: 1px solid lightgrey;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 3%; }
+
+#footer-container {
+  background: #65DEF1;
+  text-align: center; }

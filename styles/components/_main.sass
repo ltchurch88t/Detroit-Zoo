@@ -1,0 +1,179 @@
+#content-area
+	z-index: 10
+
+#details-section
+	background: $white
+	text-align: center
+	.detail-col
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		padding: 2%
+		ul
+			text-align: left
+		.ticket-btn
+			border-radius: 20px
+			max-width: 150px
+			margin: auto
+			border: 3px solid $purplered
+			a
+				text-decoration: none
+				color: black
+		.ticket-btn:hover
+			transition: all .2s ease-in-out
+			background: $purplered
+			a
+				color: $white
+		.detail-titles
+			font-weight: bold
+			color: $white
+			line-height: 143px
+		.circle-container
+			border: 2px solid $fadingyellowpink
+			background: $fadingyellowpink
+			height: 150px
+			width: 150px
+			border-radius: 150px
+			margin-left: auto
+			margin-right: auto
+
+
+#welcome-image
+	position: relative
+
+#welcome-title
+	text-align: center
+
+#detroit-zoo
+	font-weight: bold
+	background: $fadingpurple
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+.title-banner
+	text-align: center
+	background: $purplered
+	opacity: 0.9
+
+#welcome-section
+	background: url('assets/himesh-kumar-behera-221104-unsplash.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+
+#welcome-container
+	height: 500px
+	background: rgba(5,5,5,0.5)
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+
+#map-section
+	position: relative
+
+#map-section-title
+	position: absolute
+	color: $white
+	font-weight: bold
+	z-index: 100
+	top: 1%
+	right: 8%
+
+#map-title-container
+	height: 100px
+
+#map-section-title-platform
+	background: $fadingpurple
+	height: 50px
+	width: 500px
+	position: absolute
+	right: 0
+
+@media (max-width: 500px)
+	#map-section-title
+		right: 2%
+	#map-container
+		margin-top: 15%
+
+
+#map-container
+	position: relative
+
+#zoo-map
+	margin: auto
+	width: 100%
+
+.btn.map-icon
+	height: 30px
+	width: 30px
+	border-radius: 30px
+	text-align: center
+	border: 3px solid
+	animation: 2s pulsate infinite
+	position: absolute
+	box-shadow: 0 0 15px 3px rgba(1,1,1,0.3)
+
+.btn.map-icon:hover
+	transition: all .2s ease-in-out
+	background: transparent
+
+@keyframes pulsate
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.3)
+	100%
+		transform: scale(1)
+
+#icon-one
+	background: $crimson
+	border-color: $crimson
+	top: 53%
+	left: 8%
+	animation-delay: .2s
+
+#icon-two
+	background: $yellow
+	border-color: $yellow
+	top: 55%
+	left: 24%
+	animation-delay: .4s
+
+#icon-three
+	background: $orange
+	border-color: $orange
+	top: 29%
+	left: 15%
+	animation-delay: .5s
+
+#icon-four
+	background: $skyblue
+	border-color: $skyblue
+	top: 42%
+	left: 19%
+	animation-delay: .1s
+
+#icon-five
+	background: $darkslate
+	border-color: $darkslate
+	top: 33%
+	left: 29%
+
+#icon-six
+	background: $purplered
+	border-color: $purplered
+	top: 30%
+	left: 38%
+	animation-delay: .2s
+
+#icon-seven
+	background: $green
+	border-color: $green
+	top: 50%
+	left: 60%
+
+#info-section
+	height: 50px
+
+#events-section
+	height: 50px
+	background: $fadingpurple
