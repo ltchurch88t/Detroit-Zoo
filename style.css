@@ -213,7 +213,7 @@ img {
   opacity: 0.9; }
 
 #welcome-section {
-  background: url("assets/himesh-kumar-behera-221104-unsplash.jpg");
+  background: url("assets/joshua-hoehne-635733-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -232,55 +232,18 @@ img {
   justify-content: space-evenly; }
 
 #map-section {
-  position: relative;
   background: #E5ECF4;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  #map-section .info-button {
-    position: absolute;
-    bottom: 5%;
-    width: 175px;
-    border: 2px solid #A60067;
-    border-radius: 20px; }
-    #map-section .info-button a {
-      text-decoration: none;
-      color: #283845; }
-  #map-section .info-button:hover {
-    background: #A60067;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
-    #map-section .info-button:hover a {
-      color: whitesmoke; }
-
-#map-section-title {
-  position: absolute;
-  color: #283845;
-  font-weight: bold;
-  z-index: 100;
-  right: 16%;
-  top: 10%; }
-
-#map-title-container {
-  height: 100px; }
-
-#map-section-arrow {
-  position: absolute;
-  right: 18%;
-  top: 29%;
-  -webkit-transform: rotate(40deg);
-  transform: rotate(40deg); }
-
-.platform {
-  height: 50px;
-  width: 500px;
-  position: absolute; }
+  height: 35rem; }
+  #map-section .carousel-inner .carousel-item {
+    margin-left: 20%; }
 
 #map-container {
-  position: relative; }
+  padding-top: 10%; }
 
 #zoo-map {
-  margin: auto;
-  width: 100%; }
+  width: 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 .btn.map-icon {
   height: 30px;
@@ -323,54 +286,57 @@ img {
 #icon-one {
   background: crimson;
   border-color: crimson;
-  top: 53%;
-  left: 8%;
+  top: 10%;
+  left: 45%;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s; }
 
 #icon-two {
   background: #FFBE0B;
   border-color: #FFBE0B;
-  top: 55%;
-  left: 24%;
+  top: 28%;
+  left: 43%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s; }
 
 #icon-three {
   background: #F17F29;
   border-color: #F17F29;
-  top: 29%;
-  left: 15%;
+  top: 15%;
+  left: 60%;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s; }
 
 #icon-four {
   background: #C4E0F9;
   border-color: #C4E0F9;
-  top: 42%;
-  left: 19%;
+  top: 23%;
+  left: 50%;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s; }
 
 #icon-five {
   background: #283845;
   border-color: #283845;
-  top: 33%;
-  left: 29%; }
+  top: 34%;
+  left: 56%; }
 
 #icon-six {
   background: #A60067;
   border-color: #A60067;
-  top: 30%;
-  left: 38%;
+  top: 45%;
+  left: 58%;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s; }
 
 #icon-seven {
   background: #4AAD52;
   border-color: #4AAD52;
-  top: 50%;
-  left: 60%; }
+  top: 75%;
+  left: 47%; }
+
+.hide-div {
+  display: none; }
 
 #info-section {
   height: 150px; }
@@ -427,137 +393,8 @@ img {
 #event-title-container {
   height: 100px; }
 
-.ui-datepicker {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-spacing: 0; }
-
-.ui-datepicker table {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-spacing: 0; }
-
-.ui-datepicker tr {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-spacing: 0; }
-
-.ui-datepicker td {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-spacing: 0; }
-
-.ui-datepicker th {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-spacing: 0; }
-
-.ui-datepicker {
-  display: none;
-  width: 30rem;
-  height: 350px;
-  padding: 35px;
-  cursor: default;
-  text-transform: uppercase;
-  font-size: 14px;
-  background: whitesmoke;
-  border-radius: 3px; }
-
-.ui-datepicker-header {
-  position: relative;
-  padding-bottom: 10px; }
-
-.ui-datepicker-title {
-  text-align: center;
-  font-weight: bold; }
-
-.ui-datepicker-month {
-  position: relative;
-  padding-right: 15px;
-  color: #283845; }
-
-.ui-datepicker-year {
-  padding-left: 8px;
-  color: #a8a8a8; }
-
-.ui-datepicker-month:before {
-  display: block;
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 5px;
-  line-height: 5px;
-  content: "|";
-  font-size: 20px;
-  border-radius: 5px; }
-
-.ui-datepicker-prev {
-  position: absolute;
-  top: -2px;
-  padding: 5px;
-  left: 0;
-  padding-left: 0; }
-  .ui-datepicker-prev span {
-    display: block;
-    width: 5px;
-    height: 10px;
-    background-position: 0px 0px; }
-
-.ui-datepicker-next {
-  position: absolute;
-  top: -2px;
-  padding: 5px;
-  cursor: pointer;
-  right: 0;
-  padding-right: 15px; }
-  .ui-datepicker-next span {
-    display: block;
-    width: 5px;
-    height: 10px;
-    background-position: -5px 0px; }
-
-.ui-datepicker-prev-hover {
-  opacity: 0.5; }
-
-.ui-datepicker-next-hover {
-  opacity: 0.5; }
-
-.ui-datepicker-calendar th {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-weight: normal;
-  color: #6153CC; }
-.ui-datepicker-calendar td {
-  padding: 0 7px;
-  text-align: center;
-  line-height: 26px; }
-
-.ui-datepicker-calendar .ui-state-default {
-  display: block;
-  width: 2.75rem;
-  height: 2.5rem;
-  outline: none;
-  text-decoration: none;
-  color: #283845;
-  border: 1px solid transparent; }
-
-.ui-datepicker-calendar .ui-state-active {
-  color: #4AAD52;
-  border: 1px solid #4AAD52; }
-
-.ui-datepicker-other-month .ui-state-default {
-  color: #6153CC; }
-
 #social-feed {
-  margin-top: 8%;
-  height: 150px;
-  overflow: auto;
+  height: 300px;
   background: whitesmoke; }
   #social-feed .media {
     margin-top: 2%; }
@@ -567,8 +404,29 @@ img {
       border: 1px solid black;
       border-radius: 40px; }
 
+#facebook-bar {
+  background: #3B5998;
+  height: 50px; }
+
+#media-container {
+  height: 250px;
+  overflow: auto; }
+
 #social-calendar-container {
-  margin-left: 10%; }
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+  #social-calendar-container #event-button {
+    margin-top: 20%;
+    text-align: center; }
 
 #animal-section {
   position: relative;
