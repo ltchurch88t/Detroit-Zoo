@@ -1,6 +1,9 @@
 #content-area
 	z-index: 10
 
+.hideme
+	opacity: 0
+
 #details-section
 	background: $white
 	text-align: center
@@ -18,7 +21,7 @@
 			border: 3px solid $purplered
 			a
 				text-decoration: none
-				color: black
+				color: black	
 		.ticket-btn:hover
 			transition: all .2s ease-in-out
 			background: $purplered
@@ -27,7 +30,7 @@
 		.detail-titles
 			font-weight: bold
 			color: $white
-			line-height: 143px
+			line-height: 172px
 		.circle-container
 			border: 2px solid $fadingyellowpink
 			background: $fadingyellowpink
@@ -36,16 +39,16 @@
 			border-radius: 150px
 			margin-left: auto
 			margin-right: auto
-
-
-#welcome-image
-	position: relative
+#ticket
+	i
+		transform: rotate(-45deg)
 
 #welcome-title
 	text-align: center
 
 #detroit-zoo
 	font-weight: bold
+	font-family: 'Oswald'
 	background: $fadingpurple
 	-webkit-background-clip: text
 	-webkit-text-fill-color: transparent
@@ -62,38 +65,52 @@
 
 #welcome-container
 	height: 500px
-	background: rgba(5,5,5,0.5)
+	background: rgba(5,5,5,0.6)
 	display: flex
 	flex-direction: column
 	justify-content: space-evenly
 
 #map-section
 	position: relative
+	background: $glitter
+	background-size: cover
+	background-repeat: no-repeat
+	.info-button
+		position: absolute
+		bottom: 5%
+		width: 175px
+		border: 2px solid $purplered
+		border-radius: 20px
+		a
+			text-decoration: none
+			color: $darkslate
+	.info-button:hover
+		background: $purplered
+		transition: .3s ease-in-out
+		a
+			color: $white
 
 #map-section-title
 	position: absolute
-	color: $white
+	color: $darkslate
 	font-weight: bold
 	z-index: 100
-	top: 1%
-	right: 8%
+	right: 16%
+	top: 10%
 
 #map-title-container
 	height: 100px
 
-#map-section-title-platform
-	background: $fadingpurple
+#map-section-arrow
+	position: absolute
+	right: 18%
+	top: 29%
+	transform: rotate(40deg)
+
+.platform
 	height: 50px
 	width: 500px
 	position: absolute
-	right: 0
-
-@media (max-width: 500px)
-	#map-section-title
-		right: 2%
-	#map-container
-		margin-top: 15%
-
 
 #map-container
 	position: relative
@@ -172,8 +189,313 @@
 	left: 60%
 
 #info-section
-	height: 50px
+	height: 150px
 
 #events-section
-	height: 50px
 	background: $fadingpurple
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	.event-button
+		margin-bottom: 5%
+		border: 2px solid $purplered
+		border-radius: 20px
+		a
+			text-decoration: none
+			color: $darkslate
+	.event-button:hover
+		background: $purplered
+		transition: .3s ease-in-out
+		a
+			color: $white
+
+#events-container
+	margin: auto
+	padding: 5%
+	.card
+		margin: auto
+		border-radius: $cardradius
+		.card-img-top
+			border-top-right-radius: $cardradius
+			border-top-left-radius: $cardradius
+		.date-container
+			padding-top: 5%
+			.row
+				margin: auto				
+			.event-cost
+
+			.event-date
+				color: $black
+		.card-title
+			text-align: center
+			font-family: 'Oswald'
+			font-weight: bold
+			color: $black
+		.card-text
+			height: 150px
+			overflow: hidden
+
+#event-section-title
+	color: $white
+	text-align: center
+	font-weight: bold
+
+#event-title-container
+	height: 100px
+
+.ui-datepicker
+	margin: 0
+	padding: 0
+	border: none
+	border-spacing: 0
+.ui-datepicker
+	table
+		margin: 0
+		padding: 0
+		border: none
+		border-spacing: 0
+.ui-datepicker
+	tr
+		margin: 0
+		padding: 0
+		border: none
+		border-spacing: 0
+.ui-datepicker
+	td
+		margin: 0
+		padding: 0
+		border: none
+		border-spacing: 0
+.ui-datepicker
+	th 
+		margin: 0
+		padding: 0
+		border: none
+		border-spacing: 0
+
+.ui-datepicker 
+	display: none
+	width: 30rem
+	height: 350px
+	padding: 35px
+	cursor: default
+	text-transform: uppercase
+	font-size: 14px
+	background: $white
+	border-radius: 3px
+
+.ui-datepicker-header
+	position: relative
+	padding-bottom: 10px
+
+.ui-datepicker-title
+	text-align: center
+	font-weight: bold 
+
+.ui-datepicker-month
+	position: relative
+	padding-right: 15px
+	color: $darkslate
+
+.ui-datepicker-year
+	padding-left: 8px
+	color: #a8a8a8
+
+.ui-datepicker-month:before
+	display: block
+	position: absolute
+	top: 5px
+	right: 0
+	width: 5px
+	line-height: 5px
+	content: '|'
+	font-size: 20px
+	border-radius: 5px
+ 
+.ui-datepicker-prev
+	position: absolute
+	top: -2px
+	padding: 5px
+	left: 0
+	padding-left: 0
+	span
+		display: block
+		width: 5px
+		height: 10px
+		background-position: 0px 0px
+
+ 
+.ui-datepicker-next
+	position: absolute
+	top: -2px
+	padding: 5px
+	cursor: pointer 
+	right: 0
+	padding-right: 15px
+	span
+		display: block
+		width: 5px
+		height: 10px
+		background-position: -5px 0px
+ 
+.ui-datepicker-prev-hover
+	opacity: 0.5
+ 
+.ui-datepicker-next-hover
+	opacity: 0.5
+
+.ui-datepicker-calendar
+	th
+		padding-top: 15px
+		padding-bottom: 10px
+
+		text-align: center
+		font-weight: normal
+		color: $iris
+	td
+		padding: 0 7px
+		text-align: center
+		line-height: 26px
+ 
+.ui-datepicker-calendar
+	.ui-state-default
+		display: block
+		width: 2.75rem
+		height: 2.5rem
+		outline: none
+		text-decoration: none
+		color: $darkslate
+		border: 1px solid transparent
+
+.ui-datepicker-calendar
+	.ui-state-active
+		color: $green
+		border: 1px solid $green
+ 
+.ui-datepicker-other-month
+	.ui-state-default
+		color: $iris
+
+#social-feed
+	margin-top: 8%
+	height: 150px
+	overflow: auto
+	background: $white
+	.media
+		margin-top: 2%
+		.mr-3
+			height: 64px
+			width: 64px
+			border: 1px solid black
+			border-radius: 40px
+
+#social-calendar-container
+	margin-left: 10%
+
+
+#animal-section
+	position: relative
+	background: $green
+	.learn-button
+		margin-top: 3%
+		margin-bottom: 3%
+		border: 2px solid $purplered
+		border-radius: 20px
+		a
+			text-decoration: none
+			color: $darkslate
+	.learn-button:hover
+		background: $purplered
+		transition: .3s ease-in-out
+		a
+			color: $white
+
+#animal-title-container
+	height: 150px
+
+#animal-section-title
+	color: $white
+	font-weight: bold
+	z-index: 100
+
+.card-img-overlay
+	background-color: rgba(47,79,79,0.3)
+
+#learn-grid
+	.row
+		margin: 0
+	.card
+		border-radius: 0
+		background: grey
+		.card-body
+			background: rgba(1,1,1,0.5)
+		.card-title
+			font-weight: bold
+			font-size: 30px
+
+	.card:hover
+		opacity: 0.8
+		transition: .4s ease-in-out
+
+#conservation-section
+	background-image: url('assets/rawpixel-215191-unsplash.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	height: 630px
+
+#conservation-container
+	margin-left: auto
+	background: rgba(1,90,130,0.6)
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+
+#conservation
+	font-weight: bold
+	font-family: 'Oswald'
+	background: $fadingorange
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+
+@media (max-width: 1000px)
+	#map-section-arrow
+		top: 40%
+		left: 50%
+
+@media (max-width: 800px)
+	#social-calendar-container
+		display: none
+
+@media (max-width: 550px)
+	#map-section-arrow
+		display: none
+
+	#social-calendar-container
+		display: none
+
+	#map-section-arrow
+			top: 50%
+	
+	#map-section-title
+		right: 12%
+	
+	#map-container
+		margin-top: 15%
+
+	#animal-section-title
+		justify-content: center
+
+	#learn-grid
+		.card
+			.card-title
+				margin-top: 50%
+				text-align: center
+			#last-card
+				margin: auto
+			.card-text
+				visibility: hidden
+
+	#conservation-container
+		#conservation-title
+			text-align: center

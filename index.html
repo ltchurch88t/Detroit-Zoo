@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	<title>Detroit Zoo & Aqaurium</title>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script.js"></script>
@@ -35,12 +36,12 @@ body { background-color: #2F4F4F; }
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link text-light" href="#">Home
+							<a class="nav-link" href="#">Home
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Visit
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,7 +56,7 @@ body { background-color: #2F4F4F; }
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Exhibits
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -67,7 +68,7 @@ body { background-color: #2F4F4F; }
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Support
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -78,7 +79,7 @@ body { background-color: #2F4F4F; }
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Education
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -91,7 +92,7 @@ body { background-color: #2F4F4F; }
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								About
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -106,13 +107,15 @@ body { background-color: #2F4F4F; }
 				</div>
 			</div>
 		</nav> <!-- end of navigation -->
-		<nav id="sovial-nav" class="navbar navbar-light bg-light social-nav-fixed">
+		<nav id="sovial-nav" class="navbar navbar-light social-nav-fixed">
 			<div class="container">
 				<div class="col">
-					<a href="#"><img src="assets/facebook-icon.png" width="30" height="30" alt="Facebook"></a>
-					<a href="#"><img src="assets/twitter-icon.png" width="30" height="30" alt="Twitter"></a>
-					<a href="#"><img src="assets/insta-icon.png" width="30" height="30" alt="Instagram"></a>
-					<a href="#"><img src="assets/google-icon.png" width="30" height="30" alt="Google Plus"></a>
+					<a href="#"><i class="fab fa-facebook-f fa-lg" style="color: black;"></i></a>
+					<a href="#"><i class="fab fa-twitter fa-lg" style="color: black;"></i></a>
+					<a href="#"><i class="fab fa-instagram fa-lg" style="color: black;"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g fa-lg" style="color: black;"></i></a>
+					<a href="#"><i class="fab fa-youtube fa-lg" style="color: black;"></i></a>
+					<a href="#"><i class="fab fa-pinterest fa-lg" style="color: black;"></i></a>
 				</div>
 				<div class="col-lg-3"><strong>Open Today:</strong><span class="text-info"> 9 a.m. to 5 p.m.</span></div>
 			</div>
@@ -120,17 +123,17 @@ body { background-color: #2F4F4F; }
 	</header> <!-- end of header -->
 	<main>
 		<div id="banner-container" class="fluid-container"> <!-- #banner-container -->
-			<video playsinline autoplay muted loop poster="assets/himesh-kumar-behera-221104-unsplash.jpg" id="full-vid">
+			<video playsinline autoplay muted loop poster="assets/stesson-bezuidenhout-392269-unsplash.jpg" id="full-vid">
 				<source src="assets/back-clip.mp4" type="video/mp4"> <!-- short 3 clip video should make longer for final clip using video from Detroit Zoo -->
 			</video>
 			<div id="title-container">
 				<span id="banner-title" class="jumbotron display-1">WILD DETROIT</span>
-				<div class="row visit-us">
-					<div class="col text-white h3">.....</div>
-					<div id="left-arrow" class="col arrow"><img src="assets/if_arrow-right-01_186409.svg"></div>
+				<div class="row visit-us align-items-center">
+					<div class="col"><i class="fas fa-ellipsis-h fa-2x" style="color: white;"></i></div>
+					<div id="left-arrow" class="col arrow"><i class="fas fa-arrow-right" style="color: white;"></i></div>
 					<div id="visit-us-a" class="col text-white h5"><a href="#">Visit Us</a></div>
-					<div id="right-arrow" class="col arrow"><img src="assets/if_arrow-left-01_186410.svg"></div>
-					<div class="col text-white h3">.....</div>
+					<div id="right-arrow" class="col arrow"><i class="fas fa-arrow-left" style="color: white;"></i></div>
+					<div class="col"><i class="fas fa-ellipsis-h fa-2x" style="color: white;"></i></div>
 				</div>
 			</div>
 		</div> <!-- end #banner-container -->
@@ -138,7 +141,7 @@ body { background-color: #2F4F4F; }
 			<div class="fluid-container">
 
 			</div>
-			<div id="welcome-section" class="fluid-container"> <!-- begin welcome section -->
+			<div id="welcome-section" class="fluid-container hideme"> <!-- begin welcome section -->
 				<div id="welcome-container" class="col-lg-7">
 					<div id="welcome-title">
 						<span class="display-4 text-light">Welcome to the <span id="detroit-zoo">Detroit Zoo</span></span>
@@ -148,11 +151,11 @@ body { background-color: #2F4F4F; }
 					</div>
 				</div>
 			</div> <!-- end welcome section -->
-			<div id="details-section" class="fluid-container"> <!-- start of details section -->
+			<div id="details-section" class="fluid-container hideme"> <!-- start of details section -->
 				<div class="container">
 					<div id="details-container" class="row">
 						<div class="col detail-col">
-							<span class="detail-titles h2 circle-container">Hours</span>
+							<span class="detail-titles h2 circle-container"><i class="far fa-clock fa-2x"></i></span>
 							<span><strong class="text-dark">April to September</strong> (Summer Months)</span>
 							<span class="text-info">9-5 p.m.</span>
 							<span><strong class="text-dark">October to March</strong> (Winter Months)</span>
@@ -160,12 +163,12 @@ body { background-color: #2F4F4F; }
 							<span class="btn ticket-btn"><a href="#">Zoo Calendar</a></span>
 						</div>
 						<div class="col-sm border detail-col">
-							<span class="detail-titles h2 circle-container">Location</span>
+							<span class="detail-titles h2 circle-container"><i class="far fa-compass fa-2x"></i></span>
 							<span>8450 W. 10 Mile Road,<br/>Royal Oak, MI 48067</span>
 							<span class="btn ticket-btn"><a href="#">Directions?</a></span>
 						</div>
 						<div class="col-sm detail-col">
-							<span class="detail-titles h2 circle-container">Tickets</span>
+							<span id="ticket" class="detail-titles h2 circle-container"><i class="fas fa-ticket-alt fa-2x"></i></span>
 							<span>
 								<ul>
 									<li><strong>$13-18</strong> / Adults 19 years – 61</li>
@@ -180,9 +183,12 @@ body { background-color: #2F4F4F; }
 					</div>
 				</div>
 			</div> <!-- end of details section -->
-			<div id="map-section" class="fluid-container"> <!-- start of map section -->
-				<div id="map-title-container" class="container"><div id="map-section-title" class="display-1">Explore!</div></div>
-				<div id="map-section-title-platform"></div>
+			<div id="info-section" class="fluid-container"></div>
+			<div id="map-section" class="fluid-container hideme"> <!-- start of map section -->
+				<div id="map-title-container" class="container">
+					<div id="map-section-title" class="display-1">Explore!</div>
+				</div>
+				<div id="map-section-arrow"><img src="assets/drawn-arrow.png" width="40%"></div>
 				<div id="map-container" class="container">
 					<img id="zoo-map" src="assets/Asset%201.png">
 					<button id="icon-one" class="btn map-icon" type="button" data-toggle="popover" title="Australian Outback" data-content="&lt;div&gt;Red Kangaroo&lt;/div&gt;&lt;div&gt;Koala&lt;/div&gt;" />
@@ -193,27 +199,246 @@ body { background-color: #2F4F4F; }
 					<button id="icon-six" class="btn map-icon" type="button" data-toggle="popover" title="Asian Forest" data-content="&lt;div&gt;Amur Tiger&lt;/div&gt;&lt;div&gt;Red Panda&lt;/div&gt;&lt;div&gt;Camel&lt;/div&gt;&lt;div&gt;Lemur&lt;/div&gt;&lt;div&gt;Asian Wild Horse&lt;/div&gt;&lt;div&gt;Fallow Deer&lt;/div&gt;" />
 					<button id="icon-seven" class="btn map-icon" type="button" data-toggle="popover" data-placement="top" title="Conservation Campus" data-content="&lt;div&gt;Wildlife Interpretation Gallery&lt;/div&gt;&lt;div&gt;Polk Penguin Center&lt;/div&gt;&lt;div&gt;Mational Amphibian Conservation Center&lt;/div&gt;&lt;div&gt;River Otter Habitat&lt;/div&gt;&lt;div&gt;Beaver Habitat&lt;/div&gt;&lt;div&gt;Cotton Family Wetlands&lt;/div&gt;&lt;div&gt;Reptile Conservation Center&lt;/div&gt;" />
 				</div>
+				<div class="row justify-content-center">
+					<span class="btn info-button col"><a href="#">Animal Habitats</a></span>
+				</div>
 			</div> <!-- end of map section -->
-			<div id="events-section" class="fluid-container"> <!-- start of events section -->
-				<span>Hello</span>
+			<div id="info-section" class="fluid-container"></div>
+			<div id="events-section" class="fluid-container hideme"> <!-- start of events section -->
+				<div id="event-title-container" class="container">
+					<div id="event-section-title" class="display-1">Plan!</div>
+				</div>
+				<div class="container">
+					<div id="events-container" class="row justify-content-center">
+						<div id="event-carousel" class="carousel slide" col data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#event-carousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#event-carousel" data-slide-to="1"></li>
+						    <li data-target="#event-carousel" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <div class="card" style="width: 18rem;">
+								  <img class="card-img-top" src="assets/mothers-day-brunch-2018-tile1.jpg" alt="Card image cap">
+								  <div class="container date-container">
+									  <div class="row">
+									  	<div class="col-sm event-date"><i class="far fa-calendar"></i> May 13</div>
+									  	<div class="col-sm event-cost text-danger"><i class="fas fa-dollar-sign"></i> sold-out</div>
+									  </div>
+									</div>
+								  <div class="card-body">
+								    <h5 class="card-title border-bottom">Mother's Day brunch</h5>
+								    <p class="card-text">Celebrate Mother’s Day at the Detroit Zoo! This year’s Mother’s Day Brunch will be held in the Main Picnic Grove and features a delicious brunch buffet and a gift for mom. A Bloody Mary and mimosa cash bar will be open from noon to 2 p.m. Walk-up tickets will be available if the event is not sold out; however, advance ticket purchase is recommended. Pre-sold tickets will include admission to the Zoo; walk-up tickets will not.</p>
+								  </div>
+								</div>
+						    </div>
+						    <div class="carousel-item">
+						    	<div class="card" style="width: 18rem;">
+								  <img class="card-img-top" src="assets/MYBF_icon.jpg" alt="Card image cap">
+								  <div class="container date-container">
+									  <div class="row">
+									  	<div class="col-sm event-date"><i class="far fa-calendar"></i> May 17-18</div>
+									  	<div class="col-sm event-cost text-success"><i class="fas fa-dollar-sign"></i> Free</div>
+									  </div>
+									</div>
+							      <div class="card-body">
+								    <h5 class="card-title border-bottom">Meet Your Best Friend</h5>
+								    <p class="card-text">Meet Your Best Friend at the Zoo is one of the nation’s largest off-site pet adoption events. The Detroit Zoo hosts this semiannual event in partnership with the Michigan Humane Society.  Since the event’s inception in 1993, more than 25,000 dogs, cats and rabbits have been placed into new homes at the spring and fall events. Meet Your Best Friend is a free event and takes place in the parking lot beneath the Zoo’s landmark water tower.</p>
+								  </div>
+								</div>
+						    </div>
+						    <div class="carousel-item">
+						      <div class="card" style="width: 18rem;">
+								  <img class="card-img-top" src="assets/dinosauria-2018-tile1.jpg" alt="Card image cap">
+								  <div class="container date-container">
+									  <div class="row">
+									  	<div class="col-sm event-date"><i class="far fa-calendar"></i> May 25-Sep 3</div>
+									  	<div class="col-sm event-cost text-success"><i class="fas fa-dollar-sign"></i> 6</div>
+									  </div>
+									</div>
+								  <div class="card-body">
+								    <h5 class="card-title border-bottom">Dinosauria</h5>
+								    <p class="card-text">Forty lifelike animatronic dinosaurs that snarl and move – and some that spit – will provide a mega-dose of Vitamin Z. Dinosauria is the largest dinosaur exhibit of its kind in the country. Enter a veritable “Zoorassic World” as you travel back in time along a lush, winding, 3-acre DinoTrail recreating prehistoric life. Enormous primeval creatures lurk at every turn. Open daily at 9:30 a.m. starting May 25. Tickets are $6</p>
+								  </div>
+								</div>
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#event-carousel" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#event-carousel" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<div id="social-calendar-container" class="col">
+							<div id="calendar"></div>
+							<div id="social-feed" class="container">
+								<div class="media">
+								  <img class="mr-3" src="assets/zoo-thumbnail.png" width="64px" alt="Generic placeholder image">
+								  <div class="media-body">
+								    <h5 class="mt-0" style="color: #3B5998;">Detroit Zoo</h5>
+								    <p class="mt-0 text-muted">15 hrs | <i class="fas fa-user-friends"></i></p>
+								    Navigate the Detroit Zoo from the palm of your hand!We recently launched Detroit Zoo Treks, an interactive mobile map system that offers guided routes through the Zoo’s 125 acres. Choose among several timed treks, explore the Detroit Zoological Society’s long history of saving animals or maximize your step count with our Fitness Trek. Visit dzoo.org/treks before or during your next visit.
+								  </div>
+								</div>
+								<div class="media">
+								  <img class="mr-3" src="assets/zoo-thumbnail.png" width="64px" alt="Generic placeholder image">
+								  <div class="media-body">
+								    <h5 class="mt-0" style="color: #3B5998;">Detroit Zoo</h5>
+								    <p class="mt-0 text-muted">May 10 at 8:00am | <i class="fas fa-user-friends"></i></p>
+								    Did you Meet Your Best Friend at the Zoo?! Riley, Batcat, Barney and Buttercup found their "fur-ever" homes at this event in previous years. Show us a photo of your furry friends in the comments below. Meet Your Best Friend at the Zoo is Friday and Saturday, May 18-19. Held in partnership with the Michigan Humane Society, it is one of the nation's largest off-site animal adoption events. In the 25 years since its inception, more than 25,000 animals have been adopted.
+								  </div>
+								</div>
+								<div class="media">
+								  <img class="mr-3" src="assets/zoo-thumbnail.png" width="64px" alt="Generic placeholder image">
+								  <div class="media-body">
+								    <h5 class="mt-0" style="color: #3B5998;">Detroit Zoo</h5>
+								    <p class="mt-0 text-muted">May 9 at 3:14pm | <i class="fas fa-user-friends"></i></p>
+								    Join us for a very special event on Friday, May 18, as we celebrate Endangered Species Day. Visitors will have the chance to meet with our field scientists and learn about the Detroit Zoological Society’s wildlife conservation initiatives spanning six continents. A series of talks will showcase these critical efforts to save endangered species from extinction.
+								  </div>
+								</div>
+								<div class="media">
+								  <img class="mr-3" src="assets/zoo-thumbnail.png" width="64px" alt="Generic placeholder image">
+								  <div class="media-body">
+								    <h5 class="mt-0" style="color: #3B5998;">Detroit Zoo</h5>
+								    <p class="mt-0 text-muted">May 9 at 8:00am | <i class="fas fa-user-friends"></i></p>
+								    Uh oh ... they've multiplied. Dinosauria returns May 25!
+								  </div>
+								</div>
+								<div class="media">
+								  <img class="mr-3" src="assets/zoo-thumbnail.png" width="64px" alt="Generic placeholder image">
+								  <div class="media-body">
+								    <h5 class="mt-0" style="color: #3B5998;">Detroit Zoo</h5>
+								    <p class="mt-0 text-muted">May 5 at 7:00am | <i class="fas fa-user-friends"></i></p>
+								    Construction making your head spin? Take a spin on the wildlife Carousel! Get one free child ticket to the Carousel with one regular-price adult admission to the Detroit Zoo or per each adult Member visit! Now through May 24, 2018.
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<span class="btn event-button"><a href="#">Event Information</a></span>
+					</div>
+				</div>
 			</div> <!-- end of events section -->
-			<div id="info-section" class="fluid-container"> <!-- start of info section -->
-				<span>Hello</span>
-			</div> <!-- end of info section -->
-			<div id="info-section" class="fluid-container">
-				<span>Hello</span>
+			<div id="info-section" class="fluid-container"></div>
+			<div id="animal-section" class="fluid-container hideme"> <!-- start of animal section -->
+				<div id="animal-title-container" class="container">
+					<div id="animal-section-title" class="row display-1">Learn!</div>
+				</div>
+				<div id="learn-grid">
+					<div class="row no-gutters">
+					  <div class="col-lg-4">
+					    <div class="card text-white">
+						  <img class="card-img" src="assets/scout-programs-tile1.jpg" alt="Card image">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title">Scout Camps</h5>
+						    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						    
+						  </div>
+						</div>
+					</div>
+					  <div class="col-lg-4">
+						<div class="card text-white">
+						  <img class="card-img" src="assets/Family_tile.jpg" alt="Card image">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title">Family Programs</h5>
+						    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						    
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-lg-4">
+					    <div class="card text-white">
+						  <img class="card-img" src="assets/Camp_tile.jpg" alt="Card image">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title">Camps</h5>
+						    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						    
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<div class="row no-gutters">
+						<div class="col">
+							<div class="card text-white">
+							  <img class="card-img" src="assets/HumaneEd_girls.jpg" alt="Card image">
+							  <div class="card-img-overlay">
+							    <h5 id="last-card" class="card-title">Humane Education</h5>
+							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							    
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<span class="btn learn-button"><a href="#">Education Information</a></span>
+				</div>
+			</div> <!-- end of animal section -->
+			<div id="info-section" class="fluid-container"></div>
+			<div id="conservation-section" class="fluid-container hideme">
+				<div id="conservation-container" class="col-lg-7">
+					<div id="conservation-title">
+						<span class="display-1"><span id="conservation">Conserve!</span></span>
+					</div>
+					<div id="conservation-paragraph">
+						<p class="text-light">The care and rescue of animals that ultimately live at the Detroit Zoo and Belle Isle Nature Center. Their stories help to enhance conservation knowledge and action by the more than 1.6 million people who visit these facilities each year. Many animals under our care are also part of critical assurance populations to guard against extinction. Numerous field research and conservation projects with amphibians, reptiles, birds, mammals and butterflies to study and conserve wild populations. Support of other conservation organizations in the field as well as related Detroit Zoological Society education initiatives. Response to environmental emergencies where our specially trained staff rescue and rehabilitate wildlife affected by disasters such as oil spills</p>
+					</div>
+				</div>
 			</div>
 		</div> <!-- end of main area -->
 	</main>
-	<footer> <!-- start of info section -->
+	<footer> <!-- start of footer-->
 		<div id="footer-container" class="fluid-container">
-			<div class="logo-container">
-				<img src="assets/footer-logo1-aza.png" width="200px">
-				<img src="assets/footer-logo2-crains-detroit-business-best-run-non-profit-2015-award.png" width="200px">
-				<img src="assets/footer-logo3-aza-green-award3.png" width="200px">
-				<img src="assets/footer-logo-charity-nav-4star.png" width="200px">
+			<div class="container">
+				<div id="nav-row" class="row justify-content-center">
+					<nav id="footer-nav" class="navbar navbar-expand navbar-light">
+					  <div class="collapse navbar-collapse" id="navbarNav">
+					    <ul class="navbar-nav">
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">About Us</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Contact</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Careers</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Volunteer</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Press</a>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+				</div>
+				<div id="contact-container" class="row">
+					<div class="col-sm contact">
+							<span><i class="fas fa-phone fa-3x"></i></span>
+							<span>248-541-5717</span>
+						</div>
+						<div class="col-sm contact">
+							<span><i class="fas fa-at fa-3x"></i></span>
+							<span>detroitzoo@DetroitZoo.org</span>
+						</div>
+						<div class="col-sm contact">
+							<span><i class="far fa-compass fa-3x"></i></span>
+							<span>8450 W. 10 Mile Road,<br/>Royal Oak, MI 48067</span>
+						</div>
+				</div>
+				<div class="logo-container">
+					<img src="assets/footer-logo1-aza.png" width="200px">
+					<img src="assets/footer-logo2-crains-detroit-business-best-run-non-profit-2015-award.png" width="200px">
+					<img src="assets/footer-logo3-aza-green-award3.png" width="200px">
+					<img src="assets/footer-logo-charity-nav-4star.png" width="200px">
+				</div>
+				<span>Web design by LaForrest Church</span>
 			</div>
-			<span>Web design by LaForrest Church</span>
 		</div>
 	</footer> <!-- end of footer -->
 </body>
