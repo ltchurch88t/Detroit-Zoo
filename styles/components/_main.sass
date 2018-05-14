@@ -1,6 +1,9 @@
 #content-area
 	z-index: 10
 
+.hideme
+	opacity: 0
+
 #details-section
 	background: $white
 	text-align: center
@@ -9,25 +12,19 @@
 		flex-direction: column
 		justify-content: space-evenly
 		padding: 2%
-		ul
-			text-align: left
-		.ticket-btn
-			border-radius: 20px
-			max-width: 150px
+		.btn
+			width: 40%
+			box-shadow: 0 0px 10px 3px rgba(10, 5, 10, 0.1)
 			margin: auto
-			border: 3px solid $purplered
-			a
-				text-decoration: none
-				color: black
-		.ticket-btn:hover
-			transition: all .2s ease-in-out
-			background: $purplered
 			a
 				color: $white
+				text-decoration: none
+		ul
+			text-align: left
 		.detail-titles
 			font-weight: bold
 			color: $white
-			line-height: 143px
+			line-height: 172px
 		.circle-container
 			border: 2px solid $fadingyellowpink
 			background: $fadingyellowpink
@@ -36,16 +33,19 @@
 			border-radius: 150px
 			margin-left: auto
 			margin-right: auto
+#ticket
+	i
+		transform: rotate(-45deg)
 
-
-#welcome-image
-	position: relative
+.gap-section
+	height: 150px
 
 #welcome-title
 	text-align: center
 
 #detroit-zoo
 	font-weight: bold
+	font-family: 'Oswald'
 	background: $fadingpurple
 	-webkit-background-clip: text
 	-webkit-text-fill-color: transparent
@@ -56,51 +56,61 @@
 	opacity: 0.9
 
 #welcome-section
-	background: url('assets/himesh-kumar-behera-221104-unsplash.jpg')
+	background: url('assets/joshua-hoehne-635733-unsplash.jpg')
 	background-size: cover
 	background-repeat: no-repeat
 
 #welcome-container
 	height: 500px
-	background: rgba(5,5,5,0.5)
+	background: rgba(5,5,5,0.6)
 	display: flex
 	flex-direction: column
 	justify-content: space-evenly
 
+#membership-section
+	background: $fadingred
+	.membership-card
+		.container
+			text-align: center
+		.membership-card-body
+			margin-top: 3%
+		.membership-card-title
+			text-align: center
+
+#membership-section-title
+	color: $white
+	margin-left: 5%
+
 #map-section
-	position: relative
+	background: $glitter
+	height: 40rem
+	.carousel-indicators
+		top: 105%
+		li
+			background-color: $darkslate
+		li.active
+			background-color: $white
+	.carousel-inner
+		margin: auto
+		.carousel-item
+			margin-right: auto
+		.animal-card
+			margin: auto	
+	.carousel-title
+		text-align: center
+		padding-bottom: 10%
+		padding-top: 5%
 
 #map-section-title
-	position: absolute
-	color: $white
-	font-weight: bold
-	z-index: 100
-	top: 1%
-	right: 8%
-
-#map-title-container
-	height: 100px
-
-#map-section-title-platform
-	background: $fadingpurple
-	height: 50px
-	width: 500px
-	position: absolute
-	right: 0
-
-@media (max-width: 500px)
-	#map-section-title
-		right: 2%
-	#map-container
-		margin-top: 15%
-
+	text-align: center
 
 #map-container
-	position: relative
+	padding-top: 10%
+
 
 #zoo-map
-	margin: auto
 	width: 100%
+	transform: rotate(90deg)
 
 .btn.map-icon
 	height: 30px
@@ -127,53 +137,215 @@
 #icon-one
 	background: $crimson
 	border-color: $crimson
-	top: 53%
-	left: 8%
+	top: 10%
+	left: 45%
 	animation-delay: .2s
 
 #icon-two
 	background: $yellow
 	border-color: $yellow
-	top: 55%
-	left: 24%
+	top: 28%
+	left: 43%
 	animation-delay: .4s
 
 #icon-three
 	background: $orange
 	border-color: $orange
-	top: 29%
-	left: 15%
+	top: 15%
+	left: 60%
 	animation-delay: .5s
 
 #icon-four
 	background: $skyblue
 	border-color: $skyblue
-	top: 42%
-	left: 19%
+	top: 23%
+	left: 50%
 	animation-delay: .1s
 
 #icon-five
 	background: $darkslate
 	border-color: $darkslate
-	top: 33%
-	left: 29%
+	top: 34%
+	left: 56%
 
 #icon-six
 	background: $purplered
 	border-color: $purplered
-	top: 30%
-	left: 38%
+	top: 45%
+	left: 58%
 	animation-delay: .2s
 
 #icon-seven
 	background: $green
 	border-color: $green
-	top: 50%
-	left: 60%
+	top: 75%
+	left: 47%
 
-#info-section
-	height: 50px
+#large-animal-carousel
+	display: none
+
+.hide-div
+	display: none
+
+.switch
+	display: block
+
+.hidden
+	display: none
 
 #events-section
-	height: 50px
-	background: $fadingpurple
+	background: $fadingblue
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	#event-button-container
+		text-align: center
+	.event-button
+		margin-bottom: 5%
+		border: 2px solid $purplered
+		border-radius: 20px
+		a
+			text-decoration: none
+			color: $white
+	.event-button:hover
+		background: $purplered
+		transition: .3s ease-in-out
+
+#events-card-row
+	display: flex
+	justify-content: space-evenly
+
+#event-section-title
+	color: $white
+	text-align: center
+	font-weight: bold
+
+#event-title-container
+	height: 100px
+
+#animal-section
+	position: relative
+	background: $fadinggreen
+	.learn-button
+		margin-top: 3%
+		margin-bottom: 3%
+		border: 2px solid $purplered
+		border-radius: 20px
+		a
+			text-decoration: none
+			color: $darkslate
+	.learn-button:hover
+		background: $purplered
+		transition: .3s ease-in-out
+		a
+			color: $white
+
+#animal-title-container
+	height: 150px
+
+#animal-section-title
+	color: $white
+
+.card-img-overlay
+	background-color: rgba(47,79,79,0.3)
+
+#learn-grid
+	.row
+		margin: 0
+	.card
+		background: $green
+		.card-body
+			background: rgba(1,1,1,0.5)
+		.card-title
+			font-weight: bold
+			font-size: 30px
+	.card:hover
+		.card-img-overlay
+			background-color: rgba(1,1,1,0.6)
+			transition: .4s ease-in-out
+
+		
+
+#conservation-section
+	position: relative
+
+#conservation-container
+	position: absolute
+	top: 0
+	right: 0
+	background: rgba(1,90,130,0.6)
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+
+#conservation
+	font-weight: bold
+	font-family: 'Oswald'
+	background: $fadingorange
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+
+@media (max-width: 1000px)
+	#australian-carousel
+		display: none
+	#american-carousel
+		display: none
+	#african-grassland-carousel
+		display: none
+	#arctic-carousel
+		display: none
+	#african-forest-carousel
+		display: none
+	#asian-forest-carousel
+		display: none
+	#conservation-carousel
+		display: none
+	#map-container
+		display: none
+	#large-animal-carousel
+		display: block
+		margin-left: 8%
+	#conservation-section
+		background: url('assets/rawpixel-215191-unsplash.jpg')
+		background-size: cover
+		background-repeat: no-repeat
+		height: 540px
+		#conserve-parallax
+			display: none
+		#conservation
+			text-align: center
+
+
+@media (max-width: 550px)
+	#membership-section-title
+		margin-left: 0
+
+	#map-section-arrow
+		display: none
+
+	#map-section-arrow
+			top: 50%
+	
+	#map-section-title
+		right: 12%
+	
+	#map-container
+		margin-top: 15%
+
+	#animal-section-title
+		justify-content: center
+
+	#learn-grid
+		.card
+			.card-title
+				margin-top: 50%
+				text-align: center
+			#last-card
+				margin: auto
+			.card-text
+				visibility: hidden
+
+	#conservation-container
+		#conservation-title
+			text-align: center
