@@ -1,42 +1,50 @@
 $(document).ready(function() {
-    $( '#icon-one' ).click(function() {
-        $( '#icon-one-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
-
+    var recall = false;
+    $('#icon-one').click(function() {
+        $('#australian-carousel').toggleClass('switch').siblings().not('hide-div').addClass('hide-div');
     });
 
-    $( '#icon-two' ).click(function() {
-        $( '#icon-two-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
+    $('#icon-two').click(function() {
+        $('#american-carousel').toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div').removeClass('switch');
     });
 
-    $( '#icon-three' ).click(function() {
-        $( '#icon-three-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
+    $('#icon-three').click(function() {
+        $('#african-grassland-carousel').toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div').removeClass('switch');
     });
 
-    $( '#icon-four' ).click(function() {
-        $( '#icon-four-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
+    $('#icon-four').click(function() {
+        $('#arctic-carousel').toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div').removeClass('switch');
     });
-    $( '#icon-five' ).click(function() {
-        $( '#icon-five-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
-    });
-
-    $( '#icon-six' ).click(function() {
-        $( '#icon-six-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
+    $('#icon-five').click(function() {
+        $('#african-forest-carousel').toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div').removeClass('switch');
     });
 
-    $( '#icon-seven' ).click(function() {
-        $( '#icon-seven-carousel' ).toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div');
+    $('#icon-six').click(function() {
+        $('#asian-forest-carousel').toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div').removeClass('switch');
     });
 
-    $(window).scroll( function(){
-        $('.hideme').each( function(i){
-            var bottomObject = $(this).position().top + $(this).outerHeight() / 4;
+    $('#icon-seven').click(function() {
+        $('#conservation-carousel').toggleClass('hide-div').siblings().not('hide-div').addClass('hide-div').removeClass('switch');
+    });
+
+    $('.parallax-image').simpleParallax({
+        scale: '1.5',
+        orientation: 'up'
+    });
+
+    $(window).scroll(function() {
+        $('.hideme').each(function(i) {
+            var bottomObject = $(this).position().top + $(this).outerHeight() / 10;
             var bottomWindow = $(window).scrollTop() + $(window).height();
-            if( bottomWindow > bottomObject){
-                $(this).animate({'opacity':'1'},500);   
+            if (bottomWindow > bottomObject) {
+                $(this).animate({
+                    'opacity': '1'
+                }, 500);
             }
-        }); 
+        });
     });
-    $(document).scroll(function () {
+
+    $(document).scroll(function() {
         var $nav = $('.fixed-top');
         var $socialNav = $('.social-nav-fixed');
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());

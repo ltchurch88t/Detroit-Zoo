@@ -12,21 +12,15 @@
 		flex-direction: column
 		justify-content: space-evenly
 		padding: 2%
-		ul
-			text-align: left
-		.ticket-btn
-			border-radius: 20px
-			max-width: 150px
+		.btn
+			width: 40%
+			box-shadow: 0 0px 10px 3px rgba(10, 5, 10, 0.1)
 			margin: auto
-			border: 3px solid $purplered
-			a
-				text-decoration: none
-				color: black	
-		.ticket-btn:hover
-			transition: all .2s ease-in-out
-			background: $purplered
 			a
 				color: $white
+				text-decoration: none
+		ul
+			text-align: left
 		.detail-titles
 			font-weight: bold
 			color: $white
@@ -42,6 +36,9 @@
 #ticket
 	i
 		transform: rotate(-45deg)
+
+.gap-section
+	height: 150px
 
 #welcome-title
 	text-align: center
@@ -70,18 +67,42 @@
 	flex-direction: column
 	justify-content: space-evenly
 
+#membership-section
+	background: $fadingred
+	.membership-card
+		.container
+			text-align: center
+		.membership-card-body
+			margin-top: 3%
+		.membership-card-title
+			text-align: center
+
+#membership-section-title
+	color: $white
+	margin-left: 5%
+
 #map-section
 	background: $glitter
-	height: 35rem
+	height: 40rem
+	.carousel-indicators
+		top: 105%
+		li
+			background-color: $darkslate
+		li.active
+			background-color: $white
 	.carousel-inner
+		margin: auto
 		.carousel-item
-			margin-left: 20%
+			margin-right: auto
+		.animal-card
+			margin: auto	
+	.carousel-title
+		text-align: center
+		padding-bottom: 10%
+		padding-top: 5%
 
 #map-section-title
-	
-
-#map-title-container
-
+	text-align: center
 
 #map-container
 	padding-top: 10%
@@ -160,55 +181,39 @@
 	top: 75%
 	left: 47%
 
+#large-animal-carousel
+	display: none
+
 .hide-div
 	display: none
 
-#info-section
-	height: 150px
+.switch
+	display: block
+
+.hidden
+	display: none
 
 #events-section
-	background: $fadingpurple
+	background: $fadingblue
 	background-repeat: no-repeat
 	background-size: cover
 	position: relative
+	#event-button-container
+		text-align: center
 	.event-button
 		margin-bottom: 5%
 		border: 2px solid $purplered
 		border-radius: 20px
 		a
 			text-decoration: none
-			color: $darkslate
+			color: $white
 	.event-button:hover
 		background: $purplered
 		transition: .3s ease-in-out
-		a
-			color: $white
 
-#events-container
-	margin: auto
-	padding: 5%
-	.card
-		margin: auto
-		border-radius: $cardradius
-		.card-img-top
-			border-top-right-radius: $cardradius
-			border-top-left-radius: $cardradius
-		.date-container
-			padding-top: 5%
-			.row
-				margin: auto				
-			.event-cost
-
-			.event-date
-				color: $black
-		.card-title
-			text-align: center
-			font-family: 'Oswald'
-			font-weight: bold
-			color: $black
-		.card-text
-			height: 150px
-			overflow: hidden
+#events-card-row
+	display: flex
+	justify-content: space-evenly
 
 #event-section-title
 	color: $white
@@ -218,38 +223,9 @@
 #event-title-container
 	height: 100px
 
-#social-feed
-	height: 300px
-	background: $white
-	.media
-		margin-top: 2%
-		.mr-3
-			height: 64px
-			width: 64px
-			border: 1px solid black
-			border-radius: 40px
-
-#facebook-bar
-	background: $facebook
-	height: 50px
-
-#media-container
-	height: 250px
-	overflow: auto
-
-#social-calendar-container
-	margin-left: 10%
-	display: flex
-	flex-direction: column
-	justify-content: space-evenly
-	#event-button
-		margin-top: 20%
-		text-align: center
-
-
 #animal-section
 	position: relative
-	background: $green
+	background: $fadinggreen
 	.learn-button
 		margin-top: 3%
 		margin-bottom: 3%
@@ -269,8 +245,6 @@
 
 #animal-section-title
 	color: $white
-	font-weight: bold
-	z-index: 100
 
 .card-img-overlay
 	background-color: rgba(47,79,79,0.3)
@@ -279,26 +253,26 @@
 	.row
 		margin: 0
 	.card
-		border-radius: 0
-		background: grey
+		background: $green
 		.card-body
 			background: rgba(1,1,1,0.5)
 		.card-title
 			font-weight: bold
 			font-size: 30px
-
 	.card:hover
-		opacity: 0.8
-		transition: .4s ease-in-out
+		.card-img-overlay
+			background-color: rgba(1,1,1,0.6)
+			transition: .4s ease-in-out
+
+		
 
 #conservation-section
-	background-image: url('assets/rawpixel-215191-unsplash.jpg')
-	background-size: cover
-	background-repeat: no-repeat
-	height: 630px
+	position: relative
 
 #conservation-container
-	margin-left: auto
+	position: absolute
+	top: 0
+	right: 0
 	background: rgba(1,90,130,0.6)
 	display: flex
 	flex-direction: column
@@ -313,19 +287,41 @@
 
 
 @media (max-width: 1000px)
-	#map-section-arrow
-		top: 40%
-		left: 50%
-
-@media (max-width: 800px)
-	#social-calendar-container
+	#australian-carousel
 		display: none
+	#american-carousel
+		display: none
+	#african-grassland-carousel
+		display: none
+	#arctic-carousel
+		display: none
+	#african-forest-carousel
+		display: none
+	#asian-forest-carousel
+		display: none
+	#conservation-carousel
+		display: none
+	#map-container
+		display: none
+	#large-animal-carousel
+		display: block
+		margin-left: 8%
+	#conservation-section
+		background: url('assets/rawpixel-215191-unsplash.jpg')
+		background-size: cover
+		background-repeat: no-repeat
+		height: 540px
+		#conserve-parallax
+			display: none
+		#conservation
+			text-align: center
+
 
 @media (max-width: 550px)
-	#map-section-arrow
-		display: none
+	#membership-section-title
+		margin-left: 0
 
-	#social-calendar-container
+	#map-section-arrow
 		display: none
 
 	#map-section-arrow

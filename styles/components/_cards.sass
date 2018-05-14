@@ -1,0 +1,104 @@
+.membership-card
+	margin-top: 3%
+	.membership-card-body
+		background: $white
+		height: 330px
+		overflow: hidden
+		padding: 5%
+		.membership-card-title	
+			a
+				color: $info
+				text-decoration: none
+		.membership-card-text
+			li
+				list-style-type: "+"
+
+.event-card
+	margin-top: 5%
+	margin-bottom: 5%
+	border-radius: $cardradius
+	.img-top
+		border-top-left-radius: $cardradius
+		border-top-right-radius: $cardradius
+	.event-card-body
+		background: $white
+		height: 300px
+		overflow: hidden
+		padding: 5%
+		border-bottom-left-radius: $cardradius
+		border-bottom-right-radius: $cardradius
+		.event-card-title	
+			a
+				color: $facebook
+				text-decoration: none
+
+.animal-card
+	width: 200px
+	.animal-image-container
+		display: inline-block
+		position: relative
+		width: 200px
+		height: 200px
+		overflow: hidden
+		border-radius: 50%
+		.image-border
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			background: transparent
+			border: 10px solid
+			border-radius: 100%
+		.animal-image
+			width: auto
+			height: 100%
+	.animal-card-body
+		width: auto
+		display: flex
+		flex-direction: column
+		text-align: center
+		padding: 0
+#asian-forest
+	.animal-card
+		.image-border
+			border-color: $purplered
+
+#australian
+	.animal-card
+		.image-border
+			border-color: $crimson
+
+#asian-forest
+	.animal-card
+		.image-border
+			border-color: $purplered
+
+#african-forest
+	.animal-card
+		.image-border
+			border-color: $darkslate
+
+#african-grassland
+	.animal-card
+		.image-border
+			border-color: $orange
+
+#american
+	.animal-card
+		.image-border
+			border-color: $yellow
+
+#arctic
+	.animal-card
+		.image-border
+			border-color: $skyblue
+
+#conservation-carousel-slides
+	.animal-card
+		.image-border
+			border-color: $green
+
+@media (max-width: 500px)
+	// .animal-card
+	// 	margin-right: auto
